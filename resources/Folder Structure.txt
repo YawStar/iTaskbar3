@@ -1,0 +1,11 @@
+src/
+└── ys-player/
+    │
+    ├── pygui.py
+    ├── taskbar.py
+    │
+    └── resources/
+        ├── downloading.ico
+        ├── paused.ico
+        ├── error.ico
+        └── completed.ico
