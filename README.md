@@ -1,8 +1,20 @@
 # iTaskbar3
 
+[**<img src="Flags/us-36816f7e.png" height="14" style="vertical-align:middle"> English**](README.md) | [**<img src="Flags/mm-8f96fa94.png" height="14" style="vertical-align:middle"> Burmese**](README_MM.md)
+
 A lightweight Windows Taskbar integration library for **PySide6** applications using the native Windows **ITaskbarList3 COM API**.
 
 `iTaskbar3` allows PySide6 applications to control the Windows Taskbar progress indicator and display overlay icons for different application states such as downloading, paused, error, and completed.
+
+---
+
+## 📸 Screenshots
+
+![Main](Screenshots/iTaskbar3_Demo.png)
+
+<video src="Screenshots/iTaskbar3_Demo.mp4" controls width="100%"></video>
+
+---
 
 ## Features
 
@@ -271,13 +283,13 @@ A downloader application can use the following state flow:
 
 ## Taskbar Progress States
 
-| State | Value | Description |
-|---|---:|---|
-| `TBPF.NO_PROGRESS` | `0x00` | Hide the progress indicator |
-| `TBPF.INDETERMINATE` | `0x01` | Progress is unknown |
-| `TBPF.NORMAL` | `0x02` | Normal progress |
-| `TBPF.ERROR` | `0x04` | Error state |
-| `TBPF.PAUSED` | `0x08` | Paused state |
+| State                |  Value | Description                 |
+| -------------------- | -----: | --------------------------- |
+| `TBPF.NO_PROGRESS`   | `0x00` | Hide the progress indicator |
+| `TBPF.INDETERMINATE` | `0x01` | Progress is unknown         |
+| `TBPF.NORMAL`        | `0x02` | Normal progress             |
+| `TBPF.ERROR`         | `0x04` | Error state                 |
+| `TBPF.PAUSED`        | `0x08` | Paused state                |
 
 There is no dedicated `TBPF.COMPLETED` state. A completed operation can use:
 
@@ -330,6 +342,12 @@ The implementation also provides automatic cleanup through the destructor.
 
 This keeps the project lightweight and avoids requiring a separate Windows Taskbar wrapper package.
 
+## Project Name
+
+**iTaskbar3**
+
+The name refers to the Windows `ITaskbarList3` interface used by this project.
+
 ## Platform
 
 `iTaskbar3` is specifically designed for:
@@ -341,18 +359,30 @@ Windows 11
 
 It is not intended to provide Linux or macOS Taskbar/Dock APIs.
 
-## License
+## 📜 License
 
-Choose a license appropriate for your project.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-For example:
+## 👤 About the Developer
 
-```text
-MIT License
-```
+Developed with ❤️ by **YawHackka**
 
-## Project Name
+- 🐙 GitHub: [@yawstar](https://github.com/yawstar)
+- 📦 Repository: [iTaskbar3](https://github.com/YawStar/iTaskbar3)
 
-**iTaskbar3**
+## 🙏 Acknowledgments
 
-The name refers to the Windows `ITaskbarList3` interface used by this project.
+- **QT6** - The Foundation Framework
+- **Pyside6** - Python Bindings for Qt
+- **IconArchive** - A Resource for Icons
+
+---
+
+<div align="center">
+
+**[⬆ Back to Top](#-access-configurations)**
+
+Made with 💚 by YawHackka
+
+</div>
+</div>
